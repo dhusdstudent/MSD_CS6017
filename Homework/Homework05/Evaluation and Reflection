@@ -1,0 +1,34 @@
+Q: Which algorithm produced more coherent clusters?
+
+A:
+Visually, I found that the K-Means method produced the most coherent clustering. While I wouldn't say
+any of the clusters produced were illegibile, This one far and away had the most defined borders, and
+as such subdivided the data into the most coherent presentation.
+
+
+
+Q: Did dimensionality reduction improve your clustering results or execution time?
+
+A:
+Yes, particularly in regards to improving my clustering results. I didn't notice too large of an impact
+in regards to execution time, though assume that would become more apparent with a larger dataset. As it
+stands, it seems to have concentrated the data output and removed a bulk of the noise, even if there do
+appear to be some remaining outliers. But it overall did a good job of streamlining so better data could
+be observed by other tests later on.
+
+Q: How accurately did the unsupervised clusters map to the true activity labels?
+
+A:
+I would say it depends on the clustering method in question. While I stated about that
+K-Means produced the most coherent plot, I wouldn't say it is the most accurate, due to
+the nature of K-Means. DBSCAN, on the other hand, seemed to map with a notable amount
+of accuracy.
+
+Q: If you did not have access to the ground-truth labels, how would you determine the optimal
+number of clusters and evaluate your model's success?
+
+A:
+I imagine that the best option would be to rely on the data-driven methods we have access to.
+I employed both the elbow curve and the silhouette test to some extent in my data, but would
+imagine that you could rely upon them more heavily to arrive at a sufficient max number
+of clusters.
